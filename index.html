@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vega Systèmes Informatique - Développement & Conseil IT</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; color:#333; }
+    header { background:linear-gradient(120deg,#2563eb,#1e40af); color:white; padding:80px 20px; text-align:center; }
+    header h1 { font-size:3em; margin:0; }
+    header p { font-size:1.2em; margin:15px 0; }
+    nav { position:sticky; top:0; background:white; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
+    nav ul { list-style:none; margin:0; padding:10px; display:flex; justify-content:center; }
+    nav li { margin:0 15px; }
+    nav a { text-decoration:none; color:#2563eb; font-weight:bold; }
+    section { padding:60px 20px; max-width:1000px; margin:auto; }
+    section h2 { text-align:center; font-size:2em; margin-bottom:20px; }
+    .services, .portfolio, .team { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .card { border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; background:white; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
+    .team img { width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:10px; }
+    form { display:grid; gap:15px; max-width:500px; margin:auto; }
+    input, textarea { padding:10px; border:1px solid #ccc; border-radius:5px; }
+    button { padding:12px; background:#2563eb; color:white; border:none; border-radius:5px; cursor:pointer; }
+    button:hover { background:#1e40af; }
+    footer { background:#111; color:#aaa; text-align:center; padding:20px; margin-top:40px; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>Vega Systèmes Informatique</h1>
+    <p>Développement logiciel • Conseil IT • Innovation digitale</p>
+    <a href="#contact"><button>Contactez-nous</button></a>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Réalisations</a></li>
+      <li><a href="#team">Équipe</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- À propos -->
+  <section id="about">
+    <h2>À propos de nous</h2>
+    <p>
+      Nous sommes une société spécialisée dans le développement informatique et le conseil,
+      offrant des solutions innovantes pour accompagner nos clients dans leur transformation digitale.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Nos Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Développement logiciel</h3>
+        <p>Applications web, mobiles et desktop sur mesure.</p>
+      </div>
+      <div class="card">
+        <h3>Conseil IT</h3>
+        <p>Stratégie digitale, audit et transformation des systèmes.</p>
+      </div>
+      <div class="card">
+        <h3>ERP & Intégration</h3>
+        <p>Mise en place de solutions ERP et intégration métier.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud & DevOps</h3>
+        <p>Migration cloud, CI/CD et optimisation d’infrastructure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>Nos Réalisations</h2>
+    <div class="portfolio">
+      <div class="card"><h3>Projet ERP</h3><p>Déploiement ERP complet pour PME.</p></div>
+      <div class="card"><h3>Application mobile</h3><p>App mobile e-commerce sur mesure.</p></div>
+      <div class="card"><h3>Site vitrine</h3><p>Conception de sites modernes et responsives.</p></div>
+    </div>
+  </section>
+
+  <!-- Équipe -->
+  <section id="team">
+    <h2>Notre Équipe</h2>
+    <div class="team">
+      <div class="card">
+        <img src="team1.jpg" alt="Marwa">
+        <h3>Marwa</h3>
+        <p>Développeuse Fullstack</p>
+      </div>
+      <div class="card">
+        <img src="team2.jpg" alt="Youssef">
+        <h3>Youssef</h3>
+        <p>Consultant IT</p>
+      </div>
+      <div class="card">
+        <img src="team3.jpg" alt="Amine">
+        <h3>Amine</h3>
+        <p>Architecte Cloud</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre email" required />
+      <textarea placeholder="Votre message" rows="4"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 TechDev Conseil - Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
