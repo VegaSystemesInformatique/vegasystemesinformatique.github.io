@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous | Demandez un Devis IT | Vega</title>
+    <meta name="description"
+        content="Contactez les experts de Vega pour vos projets de transformation digitale, développement logiciel ou intégration ERP. Réponse sous 24h.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="scrolled">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Vega <small>Systèmes Informatique</small></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Réalisations</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active" style="color: var(--primary);">Contact</a></li>
+                </ul>
+                <div class="nav-cta" style="display: flex; align-items: center;">
+                    <div class="lang-switcher">
+                        <a href="#">FR</a> | <a href="#">EN</a> | <a href="#">AR</a>
+                    </div>
+                    <a href="https://wa.me/21622621060" class="btn btn-outline"
+                        style="padding: 0.6rem 1.5rem;">WhatsApp</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="height: 35vh; min-height: 250px;">
+        <div class="container" style="text-align: center;">
+            <div class="reveal">
+                <span class="section-subtitle">Parlons de votre projet</span>
+                <h1>Contactez nos <span>Experts</span></h1>
+                <p>Nous sommes à votre écoute pour transformer vos idées en solutions numériques.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: 1fr 1.5fr; gap: 4rem;">
+
+                <!-- Info Column -->
+                <div class="reveal">
+                    <h2 style="margin-bottom: 2rem;">Nos Coordonnées</h2>
+
+                    <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+                        <div style="color: var(--primary); font-size: 1.5rem;"><i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p style="color: var(--text-dim);">8 avenue de l'université,<br>Tunis 2092, Tunisie</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+                        <div style="color: var(--primary); font-size: 1.5rem;"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p style="color: var(--text-dim);">+216 22 621 060</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+                        <div style="color: var(--primary); font-size: 1.5rem;"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p style="color: var(--text-dim);">vegasi.contact@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div
+                        style="margin-top: 3rem; padding: 2rem; border-radius: var(--border-radius); background: linear-gradient(135deg, var(--bg-dark-alt), rgba(0, 210, 255, 0.05)); border: 1px solid var(--glass-border);">
+                        <h4 style="margin-bottom: 1rem;">Support Client Rapide</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1.5rem;">Utilisez WhatsApp
+                            pour une réponse instantanée de nos techniciens.</p>
+                        <a href="https://wa.me/21622621060" class="btn btn-primary"
+                            style="width: 100%; text-align: center;">Discuter sur WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="reveal delay-1">
+                    <div class="card">
+                        <form id="contactForm">
+                            <div class="grid" style="grid-template-columns: 1fr 1fr; margin-top: 0;">
+                                <div class="form-group">
+                                    <label for="name">Nom Complet</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Ex: Jean Dupont"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Professionnel</label>
+                                    <input type="email" id="email" class="form-control"
+                                        placeholder="jean@entreprise.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <select id="subject" class="form-control">
+                                    <option value="devis">Demande de devis</option>
+                                    <option value="conseil">Conseil & Audit</option>
+                                    <option value="erp">Intégration ERP</option>
+                                    <option value="autre">Autre demande</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Votre Message</label>
+                                <textarea id="message" class="form-control"
+                                    placeholder="Décrivez brièvement votre projet..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem;">Envoyer
+                                ma demande</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Iframe Placeholder) -->
+    <section class="section" style="padding: 0;">
+        <div style="width: 100%; height: 400px; background: #112240; position: relative; overflow: hidden;">
+            <iframe src="https://www.google.com/maps?q=36.83633705183418,10.144213698674227&hl=fr&z=15&output=embed"
+                width="100%" height="400" style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(90%);"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vega. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+
+</html>
