@@ -1,129 +1,295 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vega Systèmes Informatique - Développement & Conseil IT</title>
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; color:#333; }
-    header { background:linear-gradient(120deg,#2563eb,#1e40af); color:white; padding:80px 20px; text-align:center; }
-    header h1 { font-size:3em; margin:0; }
-    header p { font-size:1.2em; margin:15px 0; }
-    nav { position:sticky; top:0; background:white; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
-    nav ul { list-style:none; margin:0; padding:10px; display:flex; justify-content:center; }
-    nav li { margin:0 15px; }
-    nav a { text-decoration:none; color:#2563eb; font-weight:bold; }
-    section { padding:60px 20px; max-width:1000px; margin:auto; }
-    section h2 { text-align:center; font-size:2em; margin-bottom:20px; }
-    .services, .portfolio, .team { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-    .card { border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; background:white; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
-    .team img { width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:10px; }
-    form { display:grid; gap:15px; max-width:500px; margin:auto; }
-    input, textarea { padding:10px; border:1px solid #ccc; border-radius:5px; }
-    button { padding:12px; background:#2563eb; color:white; border:none; border-radius:5px; cursor:pointer; }
-    button:hover { background:#1e40af; }
-    footer { background:#111; color:#aaa; text-align:center; padding:20px; margin-top:40px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vega | Transformation Digitale & Solutions IT Premium</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Vega accompagne les entreprises dans leur transformation digitale. Conseil IT, Audit, Développement d'applications sur mesure (Web, Mobile, Desktop) et expertise ERP.">
+    <meta name="keywords"
+        content="société informatique, développement web, ERP, audit informatique, transformation digitale, développement mobile, TMA, intégration ERP">
+    <meta name="author" content="Vega">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vega-it.com/">
+    <meta property="og:title" content="Vega | Partenaire de votre Transformation Digitale">
+    <meta property="og:description"
+        content="Expertise technique et métier pour PME, Banques et Industries. Développement sur mesure et solutions ERP.">
+    <meta property="og:image" content="assets/images/hero.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Fonts & CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Vega",
+      "image": "assets/images/hero.png",
+      "@id": "",
+      "url": "https://www.vega-it.com",
+      "telephone": "+21622621060",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8 avenue de l'université",
+        "addressLocality": "Tunis",
+        "postalCode": "2092",
+        "addressCountry": "TN"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://linkedin.com/company/vega-it"
+      ]
+    }
+    </script>
 </head>
+
 <body>
 
-  <!-- Hero -->
-  <header>
-    <h1>Vega Systèmes Informatique</h1>
-    <p>Développement logiciel • Conseil IT • Innovation digitale</p>
-    <a href="#contact"><button>Contactez-nous</button></a>
-  </header>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Vega <small>Systèmes Informatique</small></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Réalisations</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-cta" style="display: flex; align-items: center;">
+                    <div class="lang-switcher">
+                        <a href="#">FR</a> | <a href="#">EN</a> | <a href="#">AR</a>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Devis Gratuit</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Réalisations</a></li>
-      <li><a href="#team">Équipe</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="section-subtitle" style="text-align: left;">Expertise & Innovation</span>
+                <h1>Votre partenaire de confiance pour la <span>transformation digitale</span></h1>
+                <p>Nous concevons des solutions IT sur mesure, optimisons vos processus métiers et intégrons les
+                    meilleurs ERP du marché pour propulser votre croissance.</p>
+                <div class="hero-btns">
+                    <a href="contact.html" class="btn btn-primary pulse">Démarrer un projet</a>
+                    <a href="services.html" class="btn btn-outline">Voir nos services</a>
+                </div>
+            </div>
+            <div class="hero-img-wrapper float-anim">
+                <img src="assets/images/hero.png" alt="Transformation Digitale IT">
+            </div>
+        </div>
+    </section>
 
-  <!-- À propos -->
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Nous sommes une société spécialisée dans le développement informatique et le conseil,
-      offrant des solutions innovantes pour accompagner nos clients dans leur transformation digitale.
-    </p>
-  </section>
+    <!-- Stats Section -->
+    <section class="section reveal">
+        <div class="container">
+            <div class="grid" style="text-align: center;">
+                <div class="stat-item">
+                    <h2 class="stat-number" data-target="15" style="font-size: 3.5rem; color: var(--primary);">20</h2>
+                    <p>Années d'Expérience</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="stat-number" data-target="150" style="font-size: 3.5rem; color: var(--primary);">50+</h2>
+                    <p>Projets Réalisés</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="stat-number" data-target="98" style="font-size: 3.5rem; color: var(--primary);">50+</h2>
+                    <p>% Clients Satisfaits</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="stat-number" data-target="25" style="font-size: 3.5rem; color: var(--primary);">10+</h2>
+                    <p>Experts Dédiés</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Services -->
-  <section id="services">
-    <h2>Nos Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Développement logiciel</h3>
-        <p>Applications web, mobiles et desktop sur mesure.</p>
-      </div>
-      <div class="card">
-        <h3>Conseil IT</h3>
-        <p>Stratégie digitale, audit et transformation des systèmes.</p>
-      </div>
-      <div class="card">
-        <h3>ERP & Intégration</h3>
-        <p>Mise en place de solutions ERP et intégration métier.</p>
-      </div>
-      <div class="card">
-        <h3>Cloud & DevOps</h3>
-        <p>Migration cloud, CI/CD et optimisation d’infrastructure.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Services Overview -->
+    <section class="section" id="services" style="background: var(--bg-dark-alt);">
+        <div class="container">
+            <span class="section-subtitle">Nos Solutions</span>
+            <h2 class="section-title reveal">Des services IT de haute précision</h2>
+            <div class="grid">
+                <!-- Service 1 -->
+                <div class="card reveal delay-1 glass-hover">
+                    <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Conseil & Audit IT</h3>
+                    <p>Analyse complète de votre infrastructure et stratégie d'évolution technologique.</p>
+                    <a href="services.html#conseil"
+                        style="color: var(--primary); display: inline-block; margin-top: 1rem;">En savoir plus →</a>
+                </div>
+                <!-- Service 2 -->
+                <div class="card reveal delay-2 glass-hover">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>Développement Web & Mobile</h3>
+                    <p>Applications sur mesure performantes avec React, Angular, Flutter et .NET.</p>
+                    <a href="services.html#dev"
+                        style="color: var(--primary); display: inline-block; margin-top: 1rem;">En savoir plus →</a>
+                </div>
+                <!-- Service 3 -->
+                <div class="card reveal delay-3 glass-hover">
+                    <div class="card-icon"><i class="fas fa-database"></i></div>
+                    <h3>Intégration ERP</h3>
+                    <p>Mise en place et personnalisation de solutions de gestion (SAP, Odoo, Sage).</p>
+                    <a href="services.html#erp"
+                        style="color: var(--primary); display: inline-block; margin-top: 1rem;">En savoir plus →</a>
+                </div>
+                <!-- Service 4 -->
+                <div class="card reveal delay-4 glass-hover">
+                    <div class="card-icon"><i class="fas fa-users-cog"></i></div>
+                    <h3>Assistance & TMA</h3>
+                    <p>Maintenance applicative et assistance technique en régie pour vos équipes.</p>
+                    <a href="services.html#tma"
+                        style="color: var(--primary); display: inline-block; margin-top: 1rem;">En savoir plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Portfolio -->
-  <section id="portfolio">
-    <h2>Nos Réalisations</h2>
-    <div class="portfolio">
-      <div class="card"><h3>Projet ERP</h3><p>Déploiement ERP complet pour PME.</p></div>
-      <div class="card"><h3>Application mobile</h3><p>App mobile e-commerce sur mesure.</p></div>
-      <div class="card"><h3>Site vitrine</h3><p>Conception de sites modernes et responsives.</p></div>
-    </div>
-  </section>
+    <!-- Expertise Métiers -->
+    <section class="section">
+        <div class="container">
+            <div style="display: flex; align-items: center; gap: 4rem; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;" class="reveal">
+                    <span class="section-subtitle" style="text-align: left;">Expertise Métier</span>
+                    <h2 style="margin-bottom: 2rem;">Une compréhension profonde de vos secteurs</h2>
+                    <p style="margin-bottom: 2rem; color: var(--text-dim);">Notre équipe possède une solide expérience
+                        dans des domaines critiques où la précision et la fiabilité sont primordiales.</p>
+                    <ul class="footer-links" style="columns: 2;">
+                        <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Banque & Finance</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Industrie 4.0</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Cabinets Comptables</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Organismes Étatiques</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> PME & Startups</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Retail & E-commerce</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 300px;" class="reveal delay-2">
+                    <img src="assets/images/expertise.png" alt="Secteurs d'activité"
+                        style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Équipe -->
-  <section id="team">
-    <h2>Notre Équipe</h2>
-    <div class="team">
-      <div class="card">
-        <img src="team1.jpg" alt="Marwa">
-        <h3>Marwa</h3>
-        <p>Développeuse Fullstack</p>
-      </div>
-      <div class="card">
-        <img src="team2.jpg" alt="Youssef">
-        <h3>Youssef</h3>
-        <p>Consultant IT</p>
-      </div>
-      <div class="card">
-        <img src="team3.jpg" alt="Amine">
-        <h3>Amine</h3>
-        <p>Architecte Cloud</p>
-      </div>
-    </div>
-  </section>
+    <!-- Tech Stack -->
+    <section class="section" style="background: rgba(124, 77, 255, 0.03);">
+        <div class="container" style="text-align: center;">
+            <span class="section-subtitle">Technologies</span>
+            <h2 class="section-title reveal">Maîtrise technologique de pointe</h2>
+            <div class="grid" style="grid-template-columns: repeat(6, 1fr); align-items: center; opacity: 0.7;">
+                <div class="reveal delay-1"><i class="fab fa-microsoft" style="font-size: 3rem;"></i>
+                    <p>.NET</p>
+                </div>
+                <div class="reveal delay-2"><i class="fab fa-java" style="font-size: 3rem;"></i>
+                    <p>Java</p>
+                </div>
+                <div class="reveal delay-3"><i class="fab fa-react" style="font-size: 3rem;"></i>
+                    <p>React</p>
+                </div>
+                <div class="reveal delay-4"><i class="fab fa-angular" style="font-size: 3rem;"></i>
+                    <p>Angular</p>
+                </div>
+                <div class="reveal delay-1"><i class="fas fa-database" style="font-size: 3rem;"></i>
+                    <p>SQL Server</p>
+                </div>
+                <div class="reveal delay-2"><i class="fas fa-cloud" style="font-size: 3rem;"></i>
+                    <p>Azure/AWS</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <form>
-      <input type="text" placeholder="Votre nom" required />
-      <input type="email" placeholder="Votre email" required />
-      <textarea placeholder="Votre message" rows="4"></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="display: block; margin-bottom: 1.5rem;">Vega
+                        <small>Systèmes Informatique</small></a>
+                    <p>Votre partenaire stratégique pour l'innovation technologique et la performance métier depuis plus
+                        de 15 ans.</p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                        <a href="#"><i class="fab fa-linkedin" style="font-size: 1.5rem;"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a>
+                        <a href="#"><i class="fab fa-facebook" style="font-size: 1.5rem;"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#conseil">Conseil IT</a></li>
+                        <li><a href="services.html#dev">Développement</a></li>
+                        <li><a href="services.html#erp">ERP</a></li>
+                        <li><a href="services.html#tma">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Société</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="projects.html">Réalisations</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> vegasi.contact@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +216 22 621 060</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 8 avenue de l'université, Tunis 2092</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vega. Tous droits réservés. <a href="#">Mentions Légales</a> | <a href="#">RGPD</a></p>
+            </div>
+        </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Vega Systèmes Informatique - Tous droits réservés</p>
-  </footer>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/21622621060" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
+    <!-- Back to Top -->
+    <a href="#" id="backToTop" style="position: fixed; bottom: 100px; right: 30px; display: none;"><i
+            class="fas fa-chevron-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
 </body>
+
 </html>
