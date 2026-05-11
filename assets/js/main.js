@@ -78,6 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.innerText = originalText;
                 btn.disabled = false;
             }, 1500);
+        });
+    }
+
     // 5. Back to Top Logic
     const backToTop = document.getElementById('backToTop');
     if (backToTop) {

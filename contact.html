@@ -10,44 +10,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--glass-border);
-            border-radius: 8px;
-            color: white;
-            font-family: 'Inter', sans-serif;
-            transition: var(--transition);
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary);
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        textarea.form-control {
-            min-height: 150px;
-        }
-    </style>
 </head>
 
 <body>
 
     <!-- Header -->
-    <header class="scrolled">
+    <header>
         <div class="container">
             <nav>
                 <a href="index.html" class="logo">Vega <small>Systèmes Informatique</small></a>
@@ -56,14 +24,13 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="projects.html">Réalisations</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html" class="active" style="color: var(--primary);">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
                 <div class="nav-cta" style="display: flex; align-items: center;">
                     <div class="lang-switcher">
                         <a href="#">FR</a> | <a href="#">EN</a> | <a href="#">AR</a>
                     </div>
-                    <a href="https://wa.me/21622621060" class="btn btn-outline"
-                        style="padding: 0.6rem 1.5rem;">WhatsApp</a>
+                    <a href="contact.html" class="btn btn-primary">Devis Gratuit</a>
                 </div>
             </nav>
         </div>
@@ -177,8 +144,47 @@
     <!-- Footer -->
     <footer>
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="display: block; margin-bottom: 1.5rem;">Vega
+                        <small>Systèmes Informatique</small></a>
+                    <p>Votre partenaire stratégique pour l'innovation technologique et la performance métier depuis plus
+                        de 15 ans.</p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                        <a href="#"><i class="fab fa-linkedin" style="font-size: 1.5rem;"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a>
+                        <a href="#"><i class="fab fa-facebook" style="font-size: 1.5rem;"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#conseil">Conseil IT</a></li>
+                        <li><a href="services.html#dev">Développement</a></li>
+                        <li><a href="services.html#erp">ERP</a></li>
+                        <li><a href="services.html#tma">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Société</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="projects.html">Réalisations</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> vegasi.contact@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +216 22 621 060</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 8 avenue de l'université, Tunis 2092</li>
+                    </ul>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Vega. Tous droits réservés.</p>
+                <p>&copy; 2026 Vega. Tous droits réservés. <a href="#">Mentions Légales</a> | <a href="#">RGPD</a></p>
             </div>
         </div>
     </footer>
